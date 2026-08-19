@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soleil Flower Store</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7fa;
+    color: #5a3d45;
+    line-height: 1.6;
+}
+
+header {
+    background: #f8c8d8;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #8b4057;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #6d3c49;
+    text-decoration: none;
+    margin: 0 7px;
+    font-size: 14px;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(#fff0f5, #fff7fa);
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    color: #8b4057;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d96b8a;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #b95370;
+}
+
+.section {
+    padding: 55px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #8b4057;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(150, 80, 100, 0.12);
+}
+
+.flower {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #8b4057;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #d96b8a;
+    margin: 10px 0;
+}
+
+.info {
+    background: #fce0e9;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.order-box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(150, 80, 100, 0.12);
+    max-width: 650px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5b7c5;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #fffafb;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+footer {
+    background: #8b4057;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: white;
+}
+
+.notice {
+    margin-top: 20px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌸 Soleil Flower Store</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#flowers">Flowers</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Flowers for Every Beautiful Moment</h1>
+    <p>Beautiful floral arrangements made with love in Dangwa, Manila.</p>
+
+    <a class="btn" href="#order">Order Now 🌷</a>
+
+    <a class="btn"
+       href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+       target="_blank">
+       Message Us 💌
+    </a>
+</section>
+
+<section class="section" id="flowers">
+
+    <h2>Our Flowers</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <div class="flower">🌹</div>
+            <h3>Rose Bouquet</h3>
+            <p>Elegant roses perfect for expressing love.</p>
+            <div class="price">Starting at ₱999</div>
+        </div>
+
+        <div class="product">
+            <div class="flower">🌷</div>
+            <h3>Tulip Bouquet</h3>
+            <p>Fresh and charming tulips for special moments.</p>
+            <div class="price">Starting at ₱1,299</div>
+        </div>
+
+        <div class="product">
+            <div class="flower">🌻</div>
+            <h3>Sunflower Bouquet</h3>
+            <p>Bright sunflowers to make someone's day.</p>
+            <div class="price">Starting at ₱899</div>
+        </div>
+
+        <div class="product">
+            <div class="flower">🌸</div>
+            <h3>Carnation Bouquet</h3>
+            <p>Sweet carnations arranged beautifully.</p>
+            <div class="price">Starting at ₱799</div>
+        </div>
+
+        <div class="product">
+            <div class="flower">💐</div>
+            <h3>Mixed Bouquet</h3>
+            <p>A lovely combination of fresh seasonal flowers.</p>
+            <div class="price">Starting at ₱999</div>
+        </div>
+
+        <div class="product">
+            <div class="flower">🌺</div>
+            <h3>Custom Arrangement</h3>
+            <p>Tell us what you want and we'll create it for you.</p>
+            <div class="price">Message us for pricing</div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+
+    <h2>How to Order</h2>
+
+    <div class="info">
+
+        <p>🌷 <strong>1. Choose your flowers</strong></p>
+        <p>📝 <strong>2. Fill out the order form</strong></p>
+        <p>🚚 <strong>3. Choose pickup or delivery</strong></p>
+        <p>💳 <strong>4. Choose your payment method</strong></p>
+        <p>💌 <strong>5. Wait for our confirmation</strong></p>
+
+        <p class="notice">
+            📍 Located in Dangwa, Manila<br>
+            🚚 Pickup & delivery available<br>
+            ❌ We do not accept walk-ins
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section" id="order">
+
+    <h2>Place Your Order 🌸</h2>
+
+    <div class="order-box">
+
+        <form action="https://formsubmit.co/" method="POST">
+
+            <label>Your Name</label>
+            <input type="text" name="name" required>
+
+            <label>Contact Number</label>
+            <input type="tel" name="contact" required>
+
+            <label>Choose Your Flowers</label>
+
+            <select name="flowers" required>
+                <option value="">Select an arrangement</option>
+                <option>Rose Bouquet</option>
+                <option>Tulip Bouquet</option>
+                <option>Sunflower Bouquet</option>
+                <option>Carnation Bouquet</option>
+                <option>Mixed Bouquet</option>
+                <option>Custom Arrangement</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" name="quantity" min="1" value="1" required>
+
+            <label>Pickup or Delivery?</label>
+
+            <select name="delivery" required>
+                <option value="">Select one</option>
+                <option>Pickup</option>
+                <option>Delivery</option>
+            </select>
+
+            <label>Delivery Address</label>
+            <textarea
+                name="address"
+                placeholder="Enter your delivery address if applicable">
+            </textarea>
+
+            <label>Preferred Date</label>
+            <input type="date" name="date" required>
+
+            <label>Preferred Time</label>
+            <input type="time" name="time" required>
+
+            <label>Payment Method</label>
+
+            <select name="payment" required>
+                <option value="">Select payment method</option>
+                <option>GCash</option>
+                <option>Maya</option>
+                <option>MariBank</option>
+                <option>GoTyme</option>
+                <option>Bank Transfer</option>
+            </select>
+
+            <label>Message / Special Instructions</label>
+            <textarea
+                name="message"
+                placeholder="Write your message for the recipient or special instructions">
+            </textarea>
+
+            <br>
+
+            <button class="btn" type="submit">
+                Submit Order 🌷
+            </button>
+
+        </form>
+
+        <div style="text-align:center; margin-top:20px;">
+            <p>Prefer Messenger?</p>
+
+            <a class="btn"
+               href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+               target="_blank">
+               Order Through Messenger 💌
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="contact">
+
+    <h2>Contact Soleil Flower Store</h2>
+
+    <div class="info">
+
+        <p>📍 Dangwa, Manila, Philippines</p>
+        <p>🚚 Pickup & Delivery Only</p>
+        <p>❌ No Walk-ins</p>
+
+        <br>
+
+        <a class="btn"
+           href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+           target="_blank">
+           Facebook / Messenger
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>🌸 © 2026 Soleil Flower Store</p>
+    <p>Flowers made with love in Dangwa, Manila.</p>
+
+</footer>
+
+</body>
+</html>
