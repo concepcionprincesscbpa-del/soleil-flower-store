@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Soleil Flower Store | Dangwa Manila</title>
 
 <style>
-
-/* =========================
-   GENERAL
-========================= */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,10 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
-
+/* HEADER */
 header {
     background: #f8c9d9;
     padding: 18px 15px;
@@ -67,17 +57,11 @@ nav a:hover {
     color: #b95370;
 }
 
-/* =========================
-   HERO
-========================= */
-
+/* HERO */
 .hero {
     text-align: center;
     padding: 85px 20px;
-    background: linear-gradient(
-        #fff0f5,
-        #fff8fb
-    );
+    background: linear-gradient(#fff0f5, #fff8fb);
 }
 
 .hero h1 {
@@ -88,14 +72,10 @@ nav a:hover {
 }
 
 .hero p {
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
     font-size: 17px;
 }
-
-/* =========================
-   BUTTONS
-========================= */
 
 .btn {
     display: inline-block;
@@ -114,12 +94,9 @@ nav a:hover {
     background: #b95370;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-
+/* SECTIONS */
 .section {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: auto;
     padding: 60px 20px;
 }
@@ -127,20 +104,15 @@ nav a:hover {
 .section h2 {
     text-align: center;
     font-family: Georgia, serif;
-    font-size: 32px;
+    font-size: 34px;
     color: #8b4057;
     margin-bottom: 35px;
 }
 
-/* =========================
-   BOUQUETS
-========================= */
-
+/* FLOWER CARDS */
 .products {
     display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(230px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
@@ -148,17 +120,21 @@ nav a:hover {
     background: white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow:
-        0 5px 20px rgba(150,80,100,0.12);
-
+    box-shadow: 0 5px 20px rgba(150,80,100,0.12);
     text-align: center;
     padding-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-4px);
 }
 
 .product img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    display: block;
     background: #f9dce6;
 }
 
@@ -172,12 +148,10 @@ nav a:hover {
 .product p {
     padding: 0 15px;
     font-size: 14px;
+    min-height: 48px;
 }
 
-/* =========================
-   INFORMATION
-========================= */
-
+/* INFORMATION */
 .info {
     background: #fce0e9;
     border-radius: 22px;
@@ -186,22 +160,17 @@ nav a:hover {
 }
 
 .info p {
-    margin: 9px 0;
+    margin: 10px 0;
 }
 
-/* =========================
-   INQUIRY FORM
-========================= */
-
+/* INQUIRY */
 .order-box {
     background: white;
     max-width: 700px;
     margin: auto;
     padding: 30px;
     border-radius: 22px;
-
-    box-shadow:
-        0 5px 20px rgba(150,80,100,0.12);
+    box-shadow: 0 5px 20px rgba(150,80,100,0.12);
 }
 
 .order-box h3 {
@@ -209,6 +178,7 @@ nav a:hover {
     color: #8b4057;
     font-family: Georgia, serif;
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .small-note {
@@ -228,18 +198,11 @@ label {
 input,
 select,
 textarea {
-
     width: 100%;
-
     padding: 13px;
-
-    border:
-        1px solid #e5b7c5;
-
+    border: 1px solid #e5b7c5;
     border-radius: 10px;
-
     background: #fffafb;
-
     font-size: 15px;
 }
 
@@ -248,10 +211,7 @@ textarea {
     resize: vertical;
 }
 
-/* =========================
-   CONTACT
-========================= */
-
+/* CONTACT */
 .contact-box {
     text-align: center;
     background: #fff0f5;
@@ -259,10 +219,11 @@ textarea {
     padding: 35px 20px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+.contact-box p {
+    margin: 8px;
+}
 
+/* FOOTER */
 footer {
     background: #8b4057;
     color: white;
@@ -274,10 +235,7 @@ footer p {
     margin: 5px;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
+/* MOBILE */
 @media (max-width: 600px) {
 
     .hero h1 {
@@ -297,836 +255,952 @@ footer p {
         padding: 45px 15px;
     }
 
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .product img {
+        height: 190px;
+    }
+
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product p {
+        font-size: 13px;
+    }
+
+    .product .btn {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
     .order-box {
         padding: 22px;
     }
-
 }
-
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
-
+<!-- HEADER -->
 <header>
 
-<div class="logo">
-🌸 Soleil Flower Store
-</div>
+    <div class="logo">
+        🌸 Soleil Flower Store
+    </div>
 
-<nav>
-
-<a href="#home">
-Home
-</a>
-
-<a href="#flowers">
-Bouquets
-</a>
-
-<a href="#how">
-How to Order
-</a>
-
-<a href="#inquiry">
-Inquire
-</a>
-
-<a href="#contact">
-Contact
-</a>
-
-</nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#flowers">Flowers</a>
+        <a href="#services">Services</a>
+        <a href="#how">How to Order</a>
+        <a href="#inquiry">Inquire</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
+<section class="hero" id="home">
 
-<section
-class="hero"
-id="home"
->
+    <h1>
+        Flowers for Every Beautiful Moment
+    </h1>
 
-<h1>
-Flowers for Every Beautiful Moment
-</h1>
+    <p>
+        Beautiful flowers and floral arrangements made with love
+        in Dangwa, Manila.
+    </p>
 
-<p>
+    <p style="margin-top:12px;">
+        🌷 Fresh Flowers &nbsp; • &nbsp;
+        💐 Custom Arrangements &nbsp; • &nbsp;
+        💌 Made With Love
+    </p>
 
-Beautiful floral arrangements
-made with love in Dangwa, Manila.
+    <a class="btn" href="#flowers">
+        View Flowers
+    </a>
 
-</p>
+    <a class="btn" href="#inquiry">
+        Inquire Now 💌
+    </a>
 
-<p style="margin-top:10px;">
+    <br>
 
-🌷 Fresh Flowers
-&nbsp; • &nbsp;
-💐 Custom Arrangements
-&nbsp; • &nbsp;
-💌 Made With Love
+    <a
+        class="btn"
+        href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+        target="_blank"
+    >
+        💬 Message Us on Facebook
+    </a>
 
-</p>
+    <br>
 
-
-<a
-class="btn"
-href="#flowers"
->
-
-View Bouquets
-
-</a>
-
-
-<a
-class="btn"
-href="#inquiry"
->
-
-Inquire Now 💌
-
-</a>
-
-
-<br>
-
-
-<a
-class="btn"
-href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
-target="_blank"
->
-
-Message Us on Facebook 💌
-
-</a>
-
-
-<br>
-
-
-<a
-class="btn"
-href="tel:09999767402"
->
-
-📞 Call 09999767402
-
-</a>
+    <a class="btn" href="tel:09999767402">
+        📞 09999767402
+    </a>
 
 </section>
 
 
+<!-- FLOWERS -->
+<section class="section" id="flowers">
 
-<!-- =========================
-     BOUQUETS
-========================= -->
+    <h2>
+        Our Flowers & Arrangements
+    </h2>
 
-<section
-class="section"
-id="flowers"
->
+    <div class="products">
 
-<h2>
-Our Bouquets
-</h2>
 
+        <!-- TULIPS -->
+        <div class="product">
 
-<div class="products">
+            <img
+                src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=800&q=80"
+                alt="Tulips"
+            >
 
+            <h3>Tulips</h3>
 
-<!-- BOUQUET 1 -->
+            <p>
+                Elegant tulips perfect for thoughtful gifts
+                and special occasions.
+            </p>
 
-<div class="product">
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-<img
-src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80"
-alt="Bouquet 1"
->
+        </div>
 
-<h3>
-Bouquet 1
-</h3>
 
-<p>
+        <!-- CARNATION -->
+        <div class="product">
 
-Beautiful floral arrangement
-perfect for special occasions.
+            <img
+                src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&q=80"
+                alt="Carnation flowers"
+            >
 
-</p>
+            <h3>Carnation</h3>
 
+            <p>
+                Lovely carnations available for different
+                floral arrangements.
+            </p>
 
-<a
-class="btn"
-href="#inquiry"
->
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-Inquire Now 💌
+        </div>
 
-</a>
 
-</div>
+        <!-- STARGAZER -->
+        <div class="product">
 
+            <img
+                src="https://images.unsplash.com/photo-1495231916356-a86217efff12?auto=format&fit=crop&w=800&q=80"
+                alt="Stargazer lilies"
+            >
 
+            <h3>Stargazer</h3>
 
-<!-- BOUQUET 2 -->
+            <p>
+                Beautiful Stargazer lilies with a
+                romantic and elegant look.
+            </p>
 
-<div class="product">
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-<img
-src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80"
-alt="Bouquet 2"
->
+        </div>
 
-<h3>
-Bouquet 2
-</h3>
 
-<p>
+        <!-- LOCAL ROSES -->
+        <div class="product">
 
-A sweet and elegant arrangement
-made for someone special.
+            <img
+                src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=800&q=80"
+                alt="Local roses"
+            >
 
-</p>
+            <h3>Local Roses</h3>
 
+            <p>
+                Fresh local roses for romantic gifts,
+                celebrations and everyday surprises.
+            </p>
 
-<a
-class="btn"
-href="#inquiry"
->
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-Inquire Now 💌
+        </div>
 
-</a>
 
-</div>
+        <!-- IMPORTED ROSES -->
+        <div class="product">
 
+            <img
+                src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=800&q=80"
+                alt="Imported roses"
+            >
 
+            <h3>Imported Roses</h3>
 
-<!-- BOUQUET 3 -->
+            <p>
+                Premium imported roses for elegant
+                and memorable arrangements.
+            </p>
 
-<div class="product">
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-<img
-src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80"
-alt="Bouquet 3"
->
+        </div>
 
-<h3>
-Bouquet 3
-</h3>
 
-<p>
+        <!-- PEONIES -->
+        <div class="product">
 
-A lovely arrangement for birthdays,
-anniversaries and celebrations.
+            <img
+                src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=800&q=80"
+                alt="Peonies"
+            >
 
-</p>
+            <h3>Peonies</h3>
 
+            <p>
+                Soft and romantic peonies for beautiful
+                floral arrangements.
+            </p>
 
-<a
-class="btn"
-href="#inquiry"
->
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-Inquire Now 💌
+        </div>
 
-</a>
 
-</div>
+        <!-- GERBERA -->
+        <div class="product">
 
+            <img
+                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80"
+                alt="Gerbera flowers"
+            >
 
+            <h3>Gerbera</h3>
 
-<!-- BOUQUET 4 -->
+            <p>
+                Bright and cheerful gerbera flowers
+                for joyful occasions.
+            </p>
 
-<div class="product">
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-<img
-src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
-alt="Bouquet 4"
->
+        </div>
 
-<h3>
-Bouquet 4
-</h3>
 
-<p>
+        <!-- LISIANTHUS -->
+        <div class="product">
 
-Fresh flowers beautifully arranged
-for any occasion.
+            <img
+                src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=80"
+                alt="Lisianthus flowers"
+            >
 
-</p>
+            <h3>Lisianthus</h3>
 
+            <p>
+                Delicate and elegant blooms perfect
+                for refined arrangements.
+            </p>
 
-<a
-class="btn"
-href="#inquiry"
->
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-Inquire Now 💌
+        </div>
 
-</a>
 
-</div>
+        <!-- DRIED FLOWERS -->
+        <div class="product">
 
+            <img
+                src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80"
+                alt="Dried flowers"
+            >
 
+            <h3>Dried Flowers</h3>
 
-<!-- BOUQUET 5 -->
+            <p>
+                Dried floral arrangements with a
+                timeless and natural aesthetic.
+            </p>
 
-<div class="product">
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-<img
-src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=800&q=80"
-alt="Bouquet 5"
->
+        </div>
 
-<h3>
-Bouquet 5
-</h3>
 
-<p>
+        <!-- FILLERS -->
+        <div class="product">
 
-A charming arrangement made
-with beautiful seasonal flowers.
+            <img
+                src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=80"
+                alt="Flower fillers"
+            >
 
-</p>
+            <h3>Fillers</h3>
 
+            <p>
+                Beautiful filler flowers and greenery
+                to complete your arrangement.
+            </p>
 
-<a
-class="btn"
-href="#inquiry"
->
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                Inquire Now 💌
+            </a>
 
-Inquire Now 💌
+        </div>
 
-</a>
 
-</div>
+        <!-- CUSTOM BOUQUETS -->
+        <div class="product">
 
+            <img
+                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80"
+                alt="Custom bouquet"
+            >
 
+            <h3>Custom Bouquets</h3>
 
-<!-- CUSTOM BOUQUET -->
+            <p>
+                Tell us your preferred flowers, colors,
+                style and special requests.
+            </p>
 
-<div class="product">
+            <a
+                class="btn"
+                href="#inquiry"
+            >
+                Request Custom Bouquet 💐
+            </a>
 
-<img
-src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=800&q=80"
-alt="Custom Bouquet"
->
+        </div>
 
-<h3>
-Custom Bouquet
-</h3>
 
-<p>
+        <!-- WEDDING -->
+        <div class="product">
 
-Tell us your preferred flowers,
-colors and style.
+            <img
+                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80"
+                alt="Wedding bouquet"
+            >
 
-</p>
+            <h3>Wedding Bouquet</h3>
 
+            <p>
+                Elegant bridal flowers made especially
+                for your wedding day.
+            </p>
 
-<a
-class="btn"
-href="#inquiry"
->
+            <a
+                class="btn"
+                href="#inquiry"
+            >
+                Inquire Now 💌
+            </a>
 
-Request Custom Bouquet 💐
+        </div>
 
-</a>
 
-</div>
+        <!-- SYMPATHY -->
+        <div class="product">
 
+            <img
+                src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80"
+                alt="Sympathy flowers"
+            >
 
-</div>
+            <h3>Sympathy Flowers</h3>
+
+            <p>
+                Thoughtful floral arrangements
+                for expressing sympathy and care.
+            </p>
+
+            <a
+                class="btn"
+                href="#inquiry"
+            >
+                Inquire Now 💌
+            </a>
+
+        </div>
+
+
+        <!-- FUNERAL -->
+        <div class="product">
+
+            <img
+                src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=800&q=80"
+                alt="Funeral flowers"
+            >
+
+            <h3>Funeral Flowers</h3>
+
+            <p>
+                Respectful floral arrangements
+                for memorial and funeral services.
+            </p>
+
+            <a
+                class="btn"
+                href="#inquiry"
+            >
+                Inquire Now 💌
+            </a>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
+<!-- SERVICES -->
+<section class="section" id="services">
 
-<!-- =========================
-     HOW TO ORDER
-========================= -->
+    <h2>
+        Our Services
+    </h2>
 
-<section
-class="section"
-id="how"
->
+    <div class="info">
 
-<h2>
-How to Order
-</h2>
+        <p>
+            💐 Custom Flower Arrangements
+        </p>
 
+        <p>
+            👰 Wedding Bouquets
+        </p>
 
-<div class="info">
+        <p>
+            🤍 Sympathy Flowers
+        </p>
 
+        <p>
+            🕊️ Funeral Flowers
+        </p>
 
-<p>
-🌸 <strong>1. Choose a bouquet</strong>
-</p>
+        <p>
+            🎁 Gift Bouquets
+        </p>
 
-<p>
-💌 <strong>2. Send us an inquiry</strong>
-</p>
+        <p>
+            🚚 Delivery
+        </p>
 
-<p>
-🌷 <strong>3. We'll check availability</strong>
-</p>
+        <p>
+            📦 Pickup
+        </p>
 
-<p>
-💬 <strong>4. We'll discuss the details with you</strong>
-</p>
-
-<p>
-🚚 <strong>5. Choose pickup or delivery</strong>
-</p>
-
-<p>
-💳 <strong>6. Payment will be arranged after confirmation</strong>
-</p>
-
-
-<br>
-
-
-<p>
-📍 Dangwa, Manila, Philippines
-</p>
-
-<p>
-🚚 Pickup & Delivery Available
-</p>
-
-<p>
-❌ No Walk-ins
-</p>
-
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- HOW TO ORDER -->
+<section class="section" id="how">
 
-<!-- =========================
-     INQUIRY
-========================= -->
+    <h2>
+        How to Order
+    </h2>
 
-<section
-class="section"
-id="inquiry"
->
+    <div class="info">
 
-<h2>
-💌 Make an Inquiry
-</h2>
+        <p>
+            🌸 <strong>1. Browse our flowers</strong>
+        </p>
 
+        <p>
+            💌 <strong>2. Send us an inquiry</strong>
+        </p>
 
-<div class="order-box">
+        <p>
+            🌷 <strong>3. Tell us your preferred flowers and arrangement</strong>
+        </p>
 
+        <p>
+            💬 <strong>4. We'll discuss availability and details with you</strong>
+        </p>
 
-<h3>
-Let's Create Something Beautiful
-</h3>
+        <p>
+            🚚 <strong>5. Choose pickup or delivery</strong>
+        </p>
 
+        <p>
+            💳 <strong>6. Payment will be arranged after confirmation</strong>
+        </p>
 
-<p class="small-note">
+        <br>
 
-Tell us what you're looking for
-and we'll get back to you with the details.
+        <p>
+            📍 Dangwa, Manila, Philippines
+        </p>
 
-</p>
+        <p>
+            🚚 Pickup & Delivery Only
+        </p>
 
+        <p>
+            ❌ No Walk-ins
+        </p>
 
-<!--
-FORM
--->
-
-<form
-action="https://formsubmit.co/princessconcepcion83@gmail.com"
-method="POST"
->
-
-
-<input
-type="hidden"
-name="_subject"
-value="New Soleil Flower Store Inquiry"
->
-
-
-<input
-type="hidden"
-name="_template"
-value="table"
->
-
-
-<label>
-Full Name
-</label>
-
-<input
-type="text"
-name="Customer Name"
-placeholder="Your full name"
-required
->
-
-
-<label>
-Contact Number
-</label>
-
-<input
-type="tel"
-name="Customer Contact"
-placeholder="09XXXXXXXXX"
-required
->
-
-
-<label>
-Bouquet
-</label>
-
-<select
-name="Bouquet"
-required
->
-
-<option value="">
-Select a bouquet
-</option>
-
-<option>
-Bouquet 1
-</option>
-
-<option>
-Bouquet 2
-</option>
-
-<option>
-Bouquet 3
-</option>
-
-<option>
-Bouquet 4
-</option>
-
-<option>
-Bouquet 5
-</option>
-
-<option>
-Custom Bouquet
-</option>
-
-</select>
-
-
-<label>
-Quantity
-</label>
-
-<input
-type="number"
-name="Quantity"
-min="1"
-value="1"
-required
->
-
-
-<label>
-Preferred Flowers
-</label>
-
-<input
-type="text"
-name="Preferred Flowers"
-placeholder="Example: roses, tulips, carnations"
->
-
-
-<label>
-Preferred Color
-</label>
-
-<input
-type="text"
-name="Preferred Color"
-placeholder="Example: pink, red, white"
->
-
-
-<label>
-Budget
-</label>
-
-<input
-type="text"
-name="Budget"
-placeholder="Optional"
->
-
-
-<label>
-Order Type
-</label>
-
-<select
-name="Order Type"
-required
->
-
-<option value="">
-Select one
-</option>
-
-<option>
-Pickup
-</option>
-
-<option>
-Delivery
-</option>
-
-</select>
-
-
-<label>
-Delivery Service
-</label>
-
-<select
-name="Delivery Service"
->
-
-<option value="">
-Select if delivery
-</option>
-
-<option>
-Lalamove
-</option>
-
-<option>
-GrabExpress
-</option>
-
-</select>
-
-
-<label>
-Delivery Address
-</label>
-
-<textarea
-name="Delivery Address"
-placeholder="Enter your complete delivery address"
-></textarea>
-
-
-<label>
-Preferred Date
-</label>
-
-<input
-type="date"
-name="Preferred Date"
-required
->
-
-
-<label>
-Preferred Time
-</label>
-
-<input
-type="time"
-name="Preferred Time"
-required
->
-
-
-<label>
-Special Request
-</label>
-
-<textarea
-name="Special Request"
-placeholder="Tell us about your preferred flowers, colors, wrapper, ribbon, card message, etc."
-></textarea>
-
-
-<button
-class="btn"
-type="submit"
->
-
-Send Inquiry 💌
-
-</button>
-
-
-<p class="small-note">
-
-Submitting this form is an inquiry only.
-Your order will be confirmed after we contact you.
-
-</p>
-
-
-</form>
-
-
-<br>
-
-
-<div style="text-align:center;">
-
-<p>
-Prefer Messenger?
-</p>
-
-
-<a
-class="btn"
-href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
-target="_blank"
->
-
-💌 Inquire Through Facebook
-
-</a>
-
-
-<br>
-
-
-<a
-class="btn"
-href="tel:09999767402"
->
-
-📞 Call Us
-
-</a>
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- INQUIRY FORM -->
+<section class="section" id="inquiry">
 
-<!-- =========================
-     CONTACT
-========================= -->
+    <h2>
+        💌 Make an Inquiry
+    </h2>
 
-<section
-class="section"
-id="contact"
->
+    <div class="order-box">
 
-<h2>
-Contact Soleil Flower Store
-</h2>
+        <h3>
+            Let's Create Something Beautiful
+        </h3>
 
-
-<div class="contact-box">
-
-
-<p>
-📍 Dangwa, Manila, Philippines
-</p>
+        <p class="small-note">
+            Tell us what you're looking for and
+            we'll get back to you with the details.
+        </p>
 
 
-<p>
-🚚 Pickup & Delivery Only
-</p>
+        <form
+            action="https://formsubmit.co/princessconcepcion83@gmail.com"
+            method="POST"
+        >
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New Soleil Flower Store Inquiry"
+            >
+
+            <input
+                type="hidden"
+                name="_template"
+                value="table"
+            >
 
 
-<p>
-❌ No Walk-ins
-</p>
+            <label>
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                name="Customer Name"
+                placeholder="Your full name"
+                required
+            >
 
 
-<p>
-📞 09999767402
-</p>
+            <label>
+                Contact Number
+            </label>
+
+            <input
+                type="tel"
+                name="Customer Contact"
+                placeholder="09XXXXXXXXX"
+                required
+            >
 
 
-<br>
+            <label>
+                What are you interested in?
+            </label>
+
+            <select
+                name="Flower or Service"
+                required
+            >
+
+                <option value="">
+                    Select one
+                </option>
+
+                <option>
+                    Tulips
+                </option>
+
+                <option>
+                    Carnation
+                </option>
+
+                <option>
+                    Stargazer
+                </option>
+
+                <option>
+                    Local Roses
+                </option>
+
+                <option>
+                    Imported Roses
+                </option>
+
+                <option>
+                    Peonies
+                </option>
+
+                <option>
+                    Gerbera
+                </option>
+
+                <option>
+                    Lisianthus
+                </option>
+
+                <option>
+                    Dried Flowers
+                </option>
+
+                <option>
+                    Fillers
+                </option>
+
+                <option>
+                    Custom Bouquets
+                </option>
+
+                <option>
+                    Wedding Bouquet
+                </option>
+
+                <option>
+                    Sympathy Flowers
+                </option>
+
+                <option>
+                    Funeral Flowers
+                </option>
+
+            </select>
 
 
-<a
-class="btn"
-href="tel:09999767402"
->
+            <label>
+                Quantity
+            </label>
 
-📞 Call Us
-
-</a>
-
-
-<a
-class="btn"
-href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
-target="_blank"
->
-
-💌 Facebook / Messenger
-
-</a>
+            <input
+                type="number"
+                name="Quantity"
+                min="1"
+                value="1"
+                required
+            >
 
 
-</div>
+            <label>
+                Preferred Flowers
+            </label>
+
+            <input
+                type="text"
+                name="Preferred Flowers"
+                placeholder="Example: roses, tulips, carnations"
+            >
+
+
+            <label>
+                Preferred Color
+            </label>
+
+            <input
+                type="text"
+                name="Preferred Color"
+                placeholder="Example: pink, red, white"
+            >
+
+
+            <label>
+                Budget
+            </label>
+
+            <input
+                type="text"
+                name="Budget"
+                placeholder="Optional"
+            >
+
+
+            <label>
+                Order Type
+            </label>
+
+            <select
+                name="Order Type"
+                required
+            >
+
+                <option value="">
+                    Select one
+                </option>
+
+                <option>
+                    Pickup
+                </option>
+
+                <option>
+                    Delivery
+                </option>
+
+            </select>
+
+
+            <label>
+                Delivery Service
+            </label>
+
+            <select
+                name="Delivery Service"
+            >
+
+                <option value="">
+                    Select if delivery
+                </option>
+
+                <option>
+                    Lalamove
+                </option>
+
+                <option>
+                    GrabExpress
+                </option>
+
+            </select>
+
+
+            <label>
+                Delivery Address
+            </label>
+
+            <textarea
+                name="Delivery Address"
+                placeholder="Enter your complete delivery address"
+            ></textarea>
+
+
+            <label>
+                Preferred Date
+            </label>
+
+            <input
+                type="date"
+                name="Preferred Date"
+                required
+            >
+
+
+            <label>
+                Preferred Time
+            </label>
+
+            <input
+                type="time"
+                name="Preferred Time"
+                required
+            >
+
+
+            <label>
+                Special Request
+            </label>
+
+            <textarea
+                name="Special Request"
+                placeholder="Tell us about your preferred flowers, colors, wrapper, ribbon, card message, etc."
+            ></textarea>
+
+
+            <button
+                class="btn"
+                type="submit"
+            >
+                Send Inquiry 💌
+            </button>
+
+
+            <p class="small-note">
+                Submitting this form is an inquiry only.
+                Your order will be confirmed after we contact you.
+            </p>
+
+        </form>
+
+
+        <div style="text-align:center; margin-top:20px;">
+
+            <p>
+                Prefer Messenger?
+            </p>
+
+            <a
+                class="btn"
+                href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+                target="_blank"
+            >
+                💬 Message Us on Facebook
+            </a>
+
+            <br>
+
+            <a
+                class="btn"
+                href="tel:09999767402"
+            >
+                📞 Call 09999767402
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
 
+<!-- CONTACT -->
+<section class="section" id="contact">
 
-<!-- =========================
-     FOOTER
-========================= -->
+    <h2>
+        Contact Soleil Flower Store
+    </h2>
 
+    <div class="contact-box">
+
+        <p>
+            📍 Dangwa, Manila, Philippines
+        </p>
+
+        <p>
+            🚚 Pickup & Delivery Only
+        </p>
+
+        <p>
+            ❌ No Walk-ins
+        </p>
+
+        <p>
+            📞 09999767402
+        </p>
+
+        <br>
+
+        <a
+            class="btn"
+            href="tel:09999767402"
+        >
+            📞 Call Us
+        </a>
+
+        <a
+            class="btn"
+            href="https://www.facebook.com/share/1LmTdvJTVe/?mibextid=wwXIfr"
+            target="_blank"
+        >
+            💬 Facebook / Messenger
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
 <footer>
 
-<p>
-🌸 Soleil Flower Store
-</p>
+    <p>
+        🌸 Soleil Flower Store
+    </p>
 
-<p>
-Dangwa, Manila, Philippines
-</p>
+    <p>
+        Dangwa, Manila, Philippines
+    </p>
 
-<p>
-📞 09999767402
-</p>
+    <p>
+        📞 09999767402
+    </p>
 
-<p>
-© 2026 Soleil Flower Store
-</p>
+    <p>
+        © 2026 Soleil Flower Store
+    </p>
 
 </footer>
 
 
 </body>
-
 </html>
